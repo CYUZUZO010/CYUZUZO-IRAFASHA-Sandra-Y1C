@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign in</title>
+        
+    </head>
+    <body>
+      <link rel="stylesheet" href="form.css">
+      <form action="sign inn.php" method="POST">
+    <h1><u>RCA  APPLICATION  FORM</u></h1>
+    
+    
+    <fieldset>
+      <legend><u>PERSONALIA:</u></legend>
+    <div class="CONTAINER">
+      <div>
+        <label for="Full names" class="Email"><b><u>FULL NAMES</u></b></label>
+      </div>
+      <input class="input" type="text" placeholder="Enter Your Full Names" name="names" required><br>
+      <div>
+        <label for="date"><b><u>DATE OF BIRTH</u></b></label>
+      </div>
+      <input class="input" type="date" placeholder="MM/DD/YYYY" name="dates" required>
+        <div>
+        <label for="Email" class="Email"><b><u>EMAIL</u></b></label>
+         
+    </div>
+        <input class="input" type="text" placeholder="Enter Your Email" name="Emails"required><br>
+
+          <div>
+            <label for="psw" class="password"><b><u>PASSWORD</u></b></label>
+          </div>
+        
+         <input class="input" type="password" placeholder="Enter Password" name="psw"required><br>
+
+           <div class="telephone">
+            <label for="telephone" class="telephone"><b><u>TELEPHONE</u></b></label>
+        </div>
+
+         <input class="input" type="number" placeholder="Enter Phone Number" name="telephones"><br>
+         <div>
+            <label for="telephone" class="telephone"><b><u>STUDENT ID</u></b></label>
+
+         </div>
+        <input class="input" type="number" placeholder="Enter Your Student ID" name="students"><br>
+        
+      </fieldset>
+      <fieldset>
+        <legend><u>CHOOSE:</u></legend>
+         <p><b><u>SELECT YOUR NATIONALITY.</u></b></p>
+         <select class="select" name="nation">
+          <option value="Rwandan">RWANDAN</option>
+          <option value="American">AMERICAN</option>
+          <option value="Other">OTHERS</option>
+         </select><br>
+         <p><b><u>CHOOSE YOUR GENDER</u></b></p>
+         <input type="radio" name="genders" title="Male"  value="Male">Male<br>
+
+         <input type="radio" name="genders" title="Female"value="Female">Female<br>
+         <p><b><u>YOUR SUBJECT(S)</u></b></p>
+         <input list="Subjects">
+         <input type="text" id="subjects" name="subjects" list="subjects">
+<datalist id="Subjects">
+  <option value="FOP">
+  <option value="WUI">
+  <option value="JAVA">
+  <option value="JAVASCRIPT">
+  <option value="PHP">
+</datalist>
+
+         
+  <p><b><u>SELECT YOUR FAVOURITE.</u></b></p>
+        
+<input class="class" type="checkbox" name="YES" tltle="VERIFIED" value="VERIFIED">
+<label for="verified" class="class">Swimming</label><br>
+
+<input class="class" type="checkbox" name="YES" tltle="VERIFIED" value="VERIFIED">
+<label for="verified" class="class">Volleyball</label><br>
+<input class="class" type="checkbox" name="YES" tltle="VERIFIED" value="VERIFIED">
+<label for="verified" class="class">Basketball</label><br>
+
+<input class="class" type="checkbox" name="YES" tltle="VERIFIED" value="VERIFIED">
+<label for="verified" class="class">Ice hockey</label><br>
+</fieldset>
+<fieldset>
+  <legend><u>DESCRIPTION:</u></legend>
+<p class="test"><u>Short description on your extraculicular activities:</u></p><br>
+<textarea class="text" rows="5" cols="60"></textarea><br>
+
+<p><u><b>SELECT THE LEVEL OF YOUR SELF CONFIDENCE:</b></u></p><br>
+<input type="range" id="volume" name="volume" min="0" max="100" value="50">
+<p><u><b>SELECT YOUR FAVOURITE COLOR:</b></u></p><BR>
+  <input  type="color" name="colors">
+<p><u><b>SELECT THE TIME FOR YOUR CLASSES:</b></u></p><BR>
+  <div>
+    <label for="text" class="time"><b><u>SET YOUR WEEK</u></b></label>
+  </div>
+  <input class="week" type="week" name="weeks"><br>
+  <div>
+    <label for="text" class="time"><b><u>SET YOUR TIME</u></b></label>
+  </div>
+  <input class="time" type="time" name="times">
+</fieldset>
+<input class="submitt" type="submit" value="submit" >
+
+</form>
+
+               
+</body>
+</html>
